@@ -1,1 +1,16 @@
-<iframe src='https://webchat.botframework.com/embed/newone-odjwswf?s=cPdhWagvnAg.ht5D9O-aRMx9hXHb0lkk2Z6IZFx78NvnlyZ3-dPySJU'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
+@model ChatConfig 
+
+@{ 
+  ViewData["Title"] = "ChatBot"; 
+} 
+
+<div id="webchat" role="main" /> 
+<script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js 
+"></script> 
+
+<script> 
+  window.WebChat.renderWebChat({ 
+    directLine: window.WebChat.createDirectLine({ token: '5lUAKj3Yd60.TSV72Q41tRozKD1fan-TC2xCiZ2qpvItEMeb9ViDi64' }), 
+    userID: '190d072f-c5f2-4c82-b346-e6070d4ddeca' 
+  }, document.getElementById('webchat')); 
+</script>
